@@ -28,14 +28,11 @@ urlpatterns = [
     path(
         "drivers/<int:pk>/", DriverDetailView.as_view(), name="driver-detail"
     ),
-    path("cars/create/", CarCreateView.as_view(), name="car-create"),
+    path("cars/create/", CarCreateView.as_view()),
     path(
         "manufacturers/create/",
         ManufacturerCreateView.as_view(),
         name="manufacturer-create",
-    ),
-    path(
-        "drivers/create/", DriverListView.as_view(), name="driver-create"
     ),
     path("cars/update/<int:pk>/", CarUpdateView.as_view(), name="car-update"),
     path(
