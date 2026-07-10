@@ -1,4 +1,4 @@
-{% extends "taxi/base.html" %}
+{% extends "base.html" %}
 
 {% block content %}
   <h2>Car Delete Page</h2>
@@ -6,6 +6,7 @@
   <form method="post" action="">
     {% csrf_token %}
     <input type="submit" class="btn btn-danger" value="Yes, delete this car">
+    <a href="{% url 'taxi:car-list'}" class="btn btn-secondary">Cancel</a>
   </form>
 
 {% endblock %}
