@@ -4,6 +4,7 @@
   <h1>Car List
     <a href="{% url 'taxi:car-create' %}">+</a>
   </h1>
+  <a href="javascript:history.back()" class="btn btn-secondary">Cancel</a>
   {% if car_list %}
     <ul>
       {% for car in car_list %}

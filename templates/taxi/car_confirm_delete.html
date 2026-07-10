@@ -2,11 +2,10 @@
 
 {% block content %}
   <h2>Car Delete Page</h2>
-  <p><a>By deleting this car, you will lose all pointed information! Are you sure?</a></p>
+  <p>By deleting this car, you will lose all information! Are you sure?</p>
   <form method="post" action="">
     {% csrf_token %}
     <input type="submit" class="btn btn-danger" value="Yes, delete this car">
     <a href="javascript:history.back()" class="btn btn-secondary">Cancel</a>
   </form>
-
 {% endblock %}
